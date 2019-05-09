@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightGrey"/>
+
+
+
+    <ImageView
+        android:id="@+id/gradim"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2a6ebc"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@id/linear"
+        android:layout_alignRight="@id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/logo"
+
+        android:paddingTop="20dp"
+        android:text="Summary Bot"
+        android:textColor="@color/White"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gradim"
+        android:id="@+id/linear">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/file"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="UPLOAD"
+
+        android:drawableLeft="@drawable/file"
+        android:padding="10dp"
+        android:gravity="center"
+
+        android:background="@drawable/rounded"
+        android:textColor="@color/Black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:text="Chat"
+
+
+        android:background="@drawable/rounded"
+        android:textColor="@color/Black"
+        android:drawableLeft="@drawable/chat"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+            <Button
+            android:id="@+id/voice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="VOICE"
+                android:layout_gravity="center"
+            android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/voice"
+                android:padding="10dp"
+                android:gravity="center"
+            android:textColor="@color/Black"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/historya"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="History"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/history"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded"
+                android:textColor="@color/Black"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/signout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SignOut"
+        android:background="@drawable/rounded3"
+        android:textColor="@color/Black"/>
+</RelativeLayout>

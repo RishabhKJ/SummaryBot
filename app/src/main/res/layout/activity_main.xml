@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/formBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1"
+        android:id="@+id/logo1"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@id/linear"
+        android:layout_alignRight="@id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/logo1"
+
+        android:paddingTop="20dp"
+        android:text="Summary Bot"
+        android:textColor="#0D5397"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+
+            android:paddingTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:textSize="14sp"
+
+
+                android:layout_marginBottom="15dp"
+
+                />
+
+            <EditText
+
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+
+                android:textSize="14sp"
+
+                android:layout_marginBottom="50dp"
+
+
+                />
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/ah_login"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="LOGIN"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textStyle="normal"
+                android:background="@drawable/rounded5"
+                android:textColor="@color/White"
+
+
+
+
+                android:layout_marginBottom="15dp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="New Account"
+
+                android:textColor="@color/Black"
+                android:layout_marginBottom="30dp"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Connect With"
+                    android:textColor="@color/Black"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/tvText"
+                    android:background="@color/Black"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tvText"
+                    android:background="@color/Black"
+                    />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/sign_in_google"
+                android:src="@drawable/google"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:id="@+id/needhelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Need Help?"
+                android:textColor="@color/Black"
+
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

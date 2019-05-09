@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history"
+   >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"/>
+    
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme"
+        android:background="@color/White">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#2a6ebc"
+            app:expandedTitleTextAppearance="@drawable/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/gradim"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#2a6ebc"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+
+                />
+            <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="150dp"
+                android:paddingTop="20dp"
+                android:text="Summary Bot"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvuserList"
+        android:nestedScrollingEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       />
+
+</android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

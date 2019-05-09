@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+    <ImageView
+        android:id="@+id/gradimm23"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2a6ebc"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo101"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@id/linear"
+        android:layout_alignRight="@id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/logo101"
+
+        android:paddingTop="20dp"
+        android:text="Summary Bot"
+        android:textColor="@color/White"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gradimm23"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scrollview_thumb"
+        android:scrollbarTrackVertical="@drawable/vertical_scrollview_track"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:hint="Your Text will appear here"
+        android:layout_marginBottom="0dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#2a6ebc"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:theme="@style/AppTheme.WhiteAccent"
+                android:layout_marginBottom="50dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textOff="Start Recording"
+        android:textOn="Finish Recording"
+        android:background="@drawable/rounded9"
+        android:textColor="@color/White"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+      />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitvoice"
+        android:textColor="@color/White"
+        android:background="@drawable/rounded9"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_marginBottom="30dp"
+       />
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded9"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:id="@+id/clearvoice"
+                android:text="Clear"
+               />
+
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:id="@+id/fetch"
+                android:layout_width="match_parent"
+                android:hint="Your Summary will apear here"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:layout_marginBottom="0dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#2a6ebc"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pitch"
+
+
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/seek_bar_pitchc"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:progress="50"
+                    android:theme="@style/AppTheme.WhiteAccent"
+                    android:soundEffectsEnabled="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:layout_marginTop="40dp"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/seek_bar_pitchc"
+                    android:id="@+id/seek_bar_speedc"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:progress="50"
+                    android:soundEffectsEnabled="true"
+                    android:theme="@style/AppTheme.WhiteAccent"
+                    />
+
+
+                <ImageView
+                    android:layout_toRightOf="@id/seek_bar_pitchc"
+                    android:id="@+id/button_speakc"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:enabled="false"
+                    android:src="@drawable/speakeron"
+                    android:text="Say it!" />
+                <ImageView
+                    android:layout_toRightOf="@id/seek_bar_speedc"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/button_speakc"
+                    android:id="@+id/button_stopc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/stop"
+                    android:enabled="false"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/downloadfile"
+                android:id="@+id/downloadvoice"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+
+                />
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sha"
+                android:id="@+id/sharesumvoice"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
